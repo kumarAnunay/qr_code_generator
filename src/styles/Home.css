@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(#CDE8E5 75%, #074173 25%);
+}
+
+.qr-generator-container {
+    width: 400px;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-left: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 32px 24px;
+}
+
+.qr-generator-container p {
+    width: 100%;
+    padding: 10px;
+    margin-top: -24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #3C5B6F;
+    border-bottom: 1px solid #CDE8E5;
+    text-align: center;
+}
+
+.sub-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 24px;
+    height: 50px;
+    resize: none;
+    border: 2px solid #074173 !important;
+    border-radius: 8px;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea:focus {
+    outline: none !important;
+}
+
+.qr-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.bttn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.bttn-container div {
+    width: 50%;
+}
+
+.bttn-container>div:last-child {
+    display: flex;
+    justify-content: right;
+}
+
+.save-img-bttn {
+    all: unset;
+    border: 1px solid #074173;
+    text-shadow: 0px 2px 4px #00000026;
+    color: #000;
+    cursor: pointer;
+    padding: 12px 24px;
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.generate-bttn {
+    all: unset;
+    box-shadow:
+        0 0 0 2px #00000040 inset,
+        0 1px #CDE8E5 inset,
+        0 0 0 1px #CDE8E51a,
+        0 1px #0741731a;
+    text-shadow: 0px 2px 4px #00000026;
+    background-color: #074173;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 24px;
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.downloading-animation {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
